@@ -175,7 +175,7 @@ func (s *WorkerSuite) TestStartContextErrorTaskDoesntStart() {
 	s.T().Skip("TODO: Not implemented yet")
 }
 
-// TestTaskPanicReportsFailedState tests that when the task/user code panics that we catch it and report thr
+// TestTaskPanicReportsFailedState tests that when the task/user code panics that we catch it and report the
 // error upstream
 func (s *WorkerSuite) TestTaskPanicReportsFailedState() {
 	s.T().Skip("TODO: Not implemented yet")
@@ -219,7 +219,7 @@ func (s *WorkerSuite) TestTaskHeartbeatsWhileRunning() {
 	s.ValidateTaskState(id, api.TerminalTIStateSuccess)
 }
 
-func (s *WorkerSuite) TestTaskHeatbeatErrorStopsTaskAndLogs() {
+func (s *WorkerSuite) TestTaskHeartbeatErrorStopsTaskAndLogs() {
 	s.T().Skip("TODO: Not implemented yet")
 }
 
