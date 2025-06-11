@@ -32,6 +32,8 @@ import enConnections from "./locales/en/connections.json";
 import enDag from "./locales/en/dag.json";
 import enDags from "./locales/en/dags.json";
 import enDashboard from "./locales/en/dashboard.json";
+import heCommon from "./locales/he/common.json";
+import heDashboard from "./locales/he/dashboard.json";
 import koCommon from "./locales/ko/common.json";
 import koDashboard from "./locales/ko/dashboard.json";
 import nlCommon from "./locales/nl/common.json";
@@ -39,6 +41,7 @@ import nlDashboard from "./locales/nl/dashboard.json";
 import plCommon from "./locales/pl/common.json";
 import plComponents from "./locales/pl/components.json";
 import plConnections from "./locales/pl/connections.json";
+import plDag from "./locales/pl/dag.json";
 import plDags from "./locales/pl/dags.json";
 import plDashboard from "./locales/pl/dashboard.json";
 import zhTWCommon from "./locales/zh-TW/common.json";
@@ -50,12 +53,13 @@ import zhTWDashboard from "./locales/zh-TW/dashboard.json";
 // import Backend from 'i18next-http-backend';
 
 export const supportedLanguages = [
-  { code: "de", name: "Deutsch" },
-  { code: "en", name: "English" },
-  { code: "ko", name: "한국어" },
-  { code: "nl", name: "Nederlands" },
-  { code: "pl", name: "Polski" },
-  { code: "zh-TW", name: "繁體中文" },
+  { code: "de", flag: "🇩🇪", name: "Deutsch" },
+  { code: "en", flag: "🇺🇸", name: "English" },
+  { code: "he", flag: "🇮🇱", name: "עברית" },
+  { code: "ko", flag: "🇰🇷", name: "한국어" },
+  { code: "nl", flag: "🇳🇱", name: "Nederlands" },
+  { code: "pl", flag: "🇵🇱", name: "Polski" },
+  { code: "zh-TW", flag: "🇹🇼", name: "繁體中文" },
 ] as const;
 
 export const defaultLanguage = "en";
@@ -78,6 +82,10 @@ const resources = {
     dags: enDags,
     dashboard: enDashboard,
   },
+  he: {
+    common: heCommon,
+    dashboard: heDashboard,
+  },
   ko: {
     common: koCommon,
     dashboard: koDashboard,
@@ -90,6 +98,7 @@ const resources = {
     common: plCommon,
     components: plComponents,
     connections: plConnections,
+    dag: plDag,
     dags: plDags,
     dashboard: plDashboard,
   },
